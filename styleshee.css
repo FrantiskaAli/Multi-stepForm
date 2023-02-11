@@ -12,7 +12,7 @@ main{
 #card-all{
     margin-top: 5%;
     width: 60%;
-    height: 600px;
+    height: 65vh;
     display: flex;
     background-color: white;
     justify-self: center;
@@ -28,7 +28,7 @@ main{
  height: 568px;
  flex-direction: column;
  background-image: url(./assets/images/bg-sidebar-desktop.svg);
- background-size:content;
+ background-size:cover;
  background-repeat: no-repeat;
  border-radius: 15px;
  text-transform: uppercase;
@@ -71,7 +71,10 @@ text-align: left;
     padding:3%;
     text-align: left;
     height: 568px;
-
+}
+.moving-button{
+    display: flex;
+    justify-content: space-between;
 }
 /*step one*/
 p{
@@ -95,13 +98,14 @@ h2{
     margin-bottom:-2%;
 }
 .next-step{
+
     padding:2% 3%;
     width: fit-content;
     border-radius: 10px;
     background-color: purple;
     color:whitesmoke;
-    margin-top:10%;
     align-self: flex-end;
+ 
     border:none;
     font-weight: bolder;
 }
@@ -121,7 +125,6 @@ h2{
     border:antiquewhite 1px inset;
     width: 20%;
  
-
 }
 .monthly-billing-option:hover{
     border:purple 1px inset;
@@ -140,6 +143,57 @@ h2{
     border-radius:10px;
     font-weight: bolder;
 }
+/*switch*/
+#switch {
+    position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  }
+
+  #switch-check {/*hides default checkbox*/
+    opacity: 0;
+    width: 0;
+    height: 0;
+  
+  }
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor:pointer;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 15px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left:3px;
+    border-radius: 50%;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+#switch-check:checked + .slider {
+    background-color: darkblue;
+  }
+  #switch-check:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  #switch-check:checked + .slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+  }
+/*switch end*/
 .go-back{
     width: fit-content;
     align-self: flex-start;
@@ -154,6 +208,8 @@ h2{
     color: blue;
 }
 
+
+/*step three*/
 .add-on{
   justify-content: space-between;
     display: flex;
@@ -199,9 +255,7 @@ input[type="checkbox"] {
     height: 20px;
     margin-top:5%;
     }
-.hidden{
-    display:none;
-}
+/*step four*/
 .confirm{
     padding:2% 3%;
     width: fit-content;
@@ -216,6 +270,7 @@ input[type="checkbox"] {
 .confirm:hover{
     background-color: darkblue;
 }
+/*thank you*/
 #thanks{
     text-align: center;
     padding:10%;
@@ -223,4 +278,7 @@ input[type="checkbox"] {
 }
 #thanks img{
     margin-left: 40%;
+}
+.hidden{
+    display:none;
 }
