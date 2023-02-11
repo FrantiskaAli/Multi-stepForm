@@ -1,0 +1,226 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family:'Ubuntu', sans-serif; 
+    background-color: gray;
+}
+main{
+    width:60%;
+}
+
+#card-all{
+    margin-top: 5%;
+    width: 60%;
+    height: 600px;
+    display: flex;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    padding: 1%;
+    border-radius: 15px;
+}
+/*aside, menu*/
+#steps-menu {
+ padding: 2%;
+ width: 273px;
+ display:flex;
+ height: 568px;
+ flex-direction: column;
+ background-image: url(./assets/images/bg-sidebar-desktop.svg);
+ background-size:content;
+ background-repeat: no-repeat;
+ border-radius: 15px;
+ text-transform: uppercase;
+}
+.steps-line{
+    display: flex;
+    justify-content: flex-end;
+}
+#steps-menu article{
+width: 100%;
+color:white;
+text-align: left;
+}
+#steps-menu h3{
+    font-family:'Ubuntu', sans-serif; 
+    font-weight: lighter;
+    color: rgb(196, 195, 195);
+    margin-bottom: -8%;
+}
+.round-button{
+    border-radius: 60%;
+    float:left;
+    margin:5%;
+    padding: 5%;
+    font-size: large;
+    background-color: rgba(0,0,0,0);
+    color: aliceblue;
+    border: white 1px solid;
+    font-weight: bolder;
+}
+.round-button:hover{
+    background-color: rgb(92, 255, 255);
+    color:blueviolet;
+}
+/*aside menu end*/
+/*main layout*/
+.main-card{
+    display:flex;
+    flex-direction: column;
+    padding:3%;
+    text-align: left;
+    height: 568px;
+
+}
+/*step one*/
+p{
+    color:gray;
+    margin-bottom:5%;
+}
+.label-input{
+    margin-bottom:-2%;
+}
+.text-input{
+    height: 2.2rem;
+    border-radius: 5px;
+    border:antiquewhite 1px inset;
+    margin:3% 0px;
+}
+.text-input:hover{
+    border: blueviolet 1px inset;
+}
+h2{
+    font-size: xx-large;
+    margin-bottom:-2%;
+}
+.next-step{
+    padding:2% 3%;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: purple;
+    color:whitesmoke;
+    margin-top:10%;
+    align-self: flex-end;
+    border:none;
+    font-weight: bolder;
+}
+.next-step:hover{
+    background-color: darkblue;
+}
+/*step two*/
+#options-row{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 0px;
+}   
+.monthly-billing-option{
+    border:2px solid black;
+    padding:7% 7% 5% 2%;
+    border-radius: 5px;
+    border:antiquewhite 1px inset;
+    width: 20%;
+ 
+
+}
+.monthly-billing-option:hover{
+    border:purple 1px inset;
+}
+
+.monthly-billing-option h5{
+    margin-bottom:-10%;
+    font-size: larger;
+}
+#switchY-M{
+    background-color: rgba(206, 115, 255, 0.3);
+    margin: 10%;
+
+    text-align: center;
+    padding:2%;
+    border-radius:10px;
+    font-weight: bolder;
+}
+.go-back{
+    width: fit-content;
+    align-self: flex-start;
+    margin-bottom: -16%;
+    font-size: large;
+    background: transparent;
+    border: none;
+    font-weight: bolder;
+    color: gray;
+}
+.go-back:hover{
+    color: blue;
+}
+
+.add-on{
+  justify-content: space-between;
+    display: flex;
+    padding:0 5%;
+    height:20%;
+    margin: 2%;
+    border-radius: 10px;
+    border: inset 1px antiquewhite ;
+    text-align: left;
+}
+.add-on:hover{
+    border: purple inset 1px;
+
+}
+.add-on h3{
+    margin-top: 10%;;
+    margin-bottom:-8%;
+}
+.add-on h6{
+    font-size: large;
+    font-weight: bold;
+    color:purple;
+
+   
+}
+.options-column{
+    margin-bottom: 5%;
+}
+.flexing{
+    flex-wrap: nowrap;
+    display:flex;
+    width:100%;
+}
+.flexing label{
+    margin-left:5%;
+ 
+    flex-wrap: nowrap;
+
+}
+input[type="checkbox"] {
+    accent-color:blueviolet;
+    width: 20px;
+    height: 20px;
+    margin-top:5%;
+    }
+.hidden{
+    display:none;
+}
+.confirm{
+    padding:2% 3%;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: purple;
+    color:whitesmoke;
+    margin-top:10%;
+    align-self: flex-end;
+    border:none;
+    font-weight: bolder;
+}
+.confirm:hover{
+    background-color: darkblue;
+}
+#thanks{
+    text-align: center;
+    padding:10%;
+    padding-top:20%;
+}
+#thanks img{
+    margin-left: 40%;
+}
