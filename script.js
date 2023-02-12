@@ -46,6 +46,19 @@ if (moveOn == 3){
 
 }});
 
+const switchYM = $('#switch-check');
+
+
+//select your plan section
+
+
+
+
+
+
+
+
+
 
 
 backOne.on('click', getPageOne);
